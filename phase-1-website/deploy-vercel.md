@@ -48,10 +48,14 @@ git push -u origin main
 2. **Import** the `dermacue` GitHub repository
 3. Configure:
    - **Framework Preset:** Other
-   - **Root Directory:** `phase-1-website` ← important
+   - **Root Directory:** `phase-1-website` ← **required** (fixes 404 NOT_FOUND)
    - **Build Command:** leave empty
    - **Output Directory:** leave empty (static files in root)
 4. Click **Deploy**
+
+> **Got 404 NOT_FOUND?** Your site files are in `phase-1-website/`, not the repo root.  
+> Fix: Vercel → Project **dermacue** → **Settings** → **General** → **Root Directory** → set to `phase-1-website` → **Save** → **Redeploy**.  
+> A root `vercel.json` rewrite is also included as a fallback if Root Directory is left blank.
 
 Every push to `main` auto-deploys. Share the URL: `https://dermacue-xxxx.vercel.app`
 
@@ -79,7 +83,7 @@ Add photos per `plans/phase-1-mvp-website.md` → **Add photos**.
 
 | Issue | Fix |
 |-------|-----|
-| 404 on deploy | Root Directory must be `phase-1-website` |
+| Vercel shows 404 | **Settings → General → Root Directory → `phase-1-website` → Redeploy** |
 | WhatsApp opens wrong number | Check `config.js` → `whatsapp` (digits only, `91` prefix) |
 | Hindi font looks off | Hard refresh; Noto Sans Devanagari loads from Google Fonts |
 | Language modal every visit | Normal in incognito; `localStorage` key `dermacue-lang` stores choice |
