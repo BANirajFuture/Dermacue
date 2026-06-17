@@ -53,7 +53,7 @@ const I18N = {
     "hero.after": "After",
     "hero.galleryNote": "Patient results · With consent",
 
-    "strip.hours": "Mon–Sat · 10 am – 7 pm",
+    "strip.hours": "Mon–Sat · 10 am – 5 pm",
     "strip.address": "D-72, Sector 85, Faridabad",
 
     "about.eyebrow": "Meet your specialist",
@@ -207,7 +207,7 @@ const I18N = {
     "time.slot1": "10:00 am – 12:00 pm",
     "time.slot2": "12:00 pm – 2:00 pm",
     "time.slot3": "2:00 pm – 4:00 pm",
-    "time.slot4": "4:00 pm – 7:00 pm",
+    "time.slot4": "4:00 pm – 5:00 pm",
 
     "footer.tagline": "Skin · Laser · Hair Transplant Clinic",
     "footer.services": "Services",
@@ -222,7 +222,7 @@ const I18N = {
     "footer.c3": "Patient reviews",
     "footer.c4": "Book appointment",
     "footer.contact": "Contact",
-    "footer.hours": "Mon–Sat<br>10:00 am – 7:00 pm",
+    "footer.hours": "Mon–Sat<br>10:00 am – 5:00 pm",
     "footer.copy": "© 2026 Dermacue Skin, Laser & Hair Transplant Clinic",
     "footer.location": "Faridabad, Haryana ·",
     "footer.privacy": "Privacy",
@@ -281,7 +281,7 @@ const I18N = {
     "hero.after": "बाद में",
     "hero.galleryNote": "मरीज़ परिणाम · सहमति के साथ",
 
-    "strip.hours": "सोम–शनि · सुबह 10 – शाम 7",
+    "strip.hours": "सोम–शनि · सुबह 10 – शाम 5",
     "strip.address": "D-72, सेक्टर 85, फरीदाबाद",
 
     "about.eyebrow": "अपने विशेषज्ञ से मिलें",
@@ -435,7 +435,7 @@ const I18N = {
     "time.slot1": "सुबह 10:00 – दोपहर 12:00",
     "time.slot2": "दोपहर 12:00 – 2:00",
     "time.slot3": "दोपहर 2:00 – शाम 4:00",
-    "time.slot4": "शाम 4:00 – 7:00",
+    "time.slot4": "शाम 4:00 – 5:00",
 
     "footer.tagline": "त्वचा · लेज़र · हेयर ट्रांसप्लांट क्लिनिक",
     "footer.services": "सेवाएँ",
@@ -450,7 +450,7 @@ const I18N = {
     "footer.c3": "मरीज़ समीक्षाएँ",
     "footer.c4": "अपॉइंटमेंट बुक करें",
     "footer.contact": "संपर्क",
-    "footer.hours": "सोम–शनि<br>सुबह 10:00 – शाम 7:00",
+    "footer.hours": "सोम–शनि<br>सुबह 10:00 – शाम 5:00",
     "footer.copy": "© 2026 डर्माक्यू स्किन, लेज़र और हेयर ट्रांसप्लांट क्लिनिक",
     "footer.location": "फरीदाबाद, हरियाणा ·",
     "footer.privacy": "गोपनीयता",
