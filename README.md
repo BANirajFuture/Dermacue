@@ -16,11 +16,15 @@ dermacue/
 │   ├── phase-3-clinic-os.md
 │   ├── decisions-checklist.md
 │   └── cost-breakdown.md
+├── digital-marketing/        ← Google Maps, reviews, content (start here for clients)
+│   ├── README.md
+│   ├── google-maps-reviews-playbook.md
+│   └── phase-1-marketing-checklist.md
 └── phase-1-website/          ← LIVE customer-facing site (Phase 1)
     ├── index.html
     ├── styles.css
     ├── deploy-gcp.md
-    └── assets/               ← add photos here before go-live
+    └── assets/               ← doctor + hero photos
 ```
 
 ## Quick start (Phase 1)

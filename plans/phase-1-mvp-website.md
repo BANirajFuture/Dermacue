@@ -10,15 +10,16 @@
 
 - [x] Single-page responsive website (SKINIQ-inspired design)
 - [x] English + Hindi language switcher (first-visit modal + nav toggle)
-- [ ] Real phone number, email, business hours in `config.js`
-- [ ] Dr. Deepika professional headshot uploaded
-- [ ] Before/after hero photos (with patient consent)
-- [ ] GitHub repo pushed (`dermacue`)
+- [x] Real phone number, email, business hours in `config.js`
+- [x] Dr. Deepika professional headshot uploaded (`assets/doctor.jpg`)
+- [x] Before/after hero photos (with patient consent)
+- [x] GitHub repo pushed (`dermacue`)
 - [ ] Vercel review URL shared with stakeholders
 - [ ] Domain registered (`dermacue.in` or similar) — optional for review
-- [ ] Google Business Profile created for Sector-85 Faridabad
-- [ ] WhatsApp Business account on clinic number
+- [x] Google Business Profile on Maps (link in `config.js` — verify claimed & complete)
+- [ ] WhatsApp Business app fully configured (quick replies, away message)
 - [ ] Optional: Practo / Cal.com booking URL in `config.js`
+- [ ] Marketing: review QR + 15+ Google reviews — see `digital-marketing/`
 
 ---
 

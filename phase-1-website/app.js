@@ -42,6 +42,7 @@
 
     rebuildServiceSelect();
     rebuildTimeSelect();
+    rebuildTreatmentsCarousel();
     updateLangSwitcher();
     applyContactConfig();
   }
@@ -57,7 +58,7 @@
     ph.selected = !prev;
     ph.textContent = t("book.servicePh");
     select.appendChild(ph);
-    SERVICE_OPTIONS.forEach((key) => {
+    (typeof SERVICE_OPTIONS !== "undefined" ? SERVICE_OPTIONS : []).forEach((key) => {
       const opt = document.createElement("option");
       opt.value = key;
       opt.textContent = t(`service.${key}`);
@@ -66,6 +67,70 @@
         ph.selected = false;
       }
       select.appendChild(opt);
+    });
+  }
+
+  function rebuildTreatmentsCarousel() {
+    const container = document.getElementById("treatments-scroll");
+    if (!container || typeof TREATMENTS === "undefined") return;
+
+    container.innerHTML = "";
+    TREATMENTS.forEach(({ id, image }) => {
+      const title = t(`service.${id}`);
+      const card = document.createElement("article");
+      card.className = "treatment-card";
+      card.innerHTML = `
+        <div class="treatment-card__media">
+          <img src="${image}" alt="" loading="lazy" width="280" height="200">
+        </div>
+        <div class="treatment-card__body">
+          <h3 class="treatment-card__title"></h3>
+          <p class="treatment-card__desc"></p>
+          <a href="#book" class="treatment-card__cta" data-book-service="${id}"></a>
+        </div>
+      `;
+      card.querySelector("img").alt = title;
+      card.querySelector(".treatment-card__title").textContent = title;
+      card.querySelector(".treatment-card__desc").textContent = t(`svc.card.${id}`);
+      card.querySelector(".treatment-card__cta").textContent = t("svc.book");
+      container.appendChild(card);
+    });
+
+    container.setAttribute("aria-label", t("svc.scrollRegion"));
+  }
+
+  function preselectService(serviceId) {
+    const select = document.getElementById("service");
+    if (!select || !serviceId) return;
+    select.value = serviceId;
+    const ph = select.querySelector("option[disabled]");
+    if (ph) ph.selected = false;
+  }
+
+  function scrollTreatments(direction) {
+    const scroll = document.getElementById("treatments-scroll");
+    if (!scroll) return;
+    const card = scroll.querySelector(".treatment-card");
+    if (!card) return;
+    const gap = parseFloat(getComputedStyle(scroll).gap) || 16;
+    scroll.scrollBy({
+      left: direction * (card.offsetWidth + gap),
+      behavior: "smooth",
+    });
+  }
+
+  function initTreatmentsCarousel() {
+    document.querySelector("[data-scroll-prev]")?.addEventListener("click", () => {
+      scrollTreatments(-1);
+    });
+    document.querySelector("[data-scroll-next]")?.addEventListener("click", () => {
+      scrollTreatments(1);
+    });
+
+    document.getElementById("treatments-scroll")?.addEventListener("click", (e) => {
+      const link = e.target.closest("[data-book-service]");
+      if (!link) return;
+      preselectService(link.dataset.bookService);
     });
   }
 
@@ -275,6 +340,7 @@
     initLangSwitcher();
     initMobileNav();
     initFaq();
+    initTreatmentsCarousel();
     initSmoothScroll();
     initNavShadow();
 

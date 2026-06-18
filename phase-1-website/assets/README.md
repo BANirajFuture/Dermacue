@@ -7,6 +7,8 @@ Add clinic photos here before go-live. Commit JPG/WebP files to this folder (kee
 | `doctor.jpg` | 800×1060 px (3:4) | About section — Dr. Deepika headshot |
 | `hero-before.jpg` | 900×1200 px | Hero left panel (before) |
 | `hero-after.jpg` | 900×1200 px | Hero right panel (after) |
+| `services/*.jpg` | ~560×420 px (4:3) | Treatment carousel — see `services/README.md` |
+| `hero-after.jpg` | 900×1200 px | Hero right panel (after) |
 | `logo.png` | 200×60 px | Optional nav logo (future) |
 
 **Before/after:** Only use photos with signed patient consent forms on file.

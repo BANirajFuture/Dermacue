@@ -207,54 +207,18 @@
   </div>
 </section>
 
-<!-- SERVICES -->
+<!-- SERVICES — horizontal treatment carousel (order: services-config.js) -->
 <section id="services">
   <div class="section-inner">
     <div class="eyebrow" data-i18n="svc.eyebrow">What we treat</div>
     <h2 class="section-heading" data-i18n="svc.heading">Services &amp; treatments</h2>
     <p class="section-sub" data-i18n="svc.sub">From medical dermatology to advanced aesthetic procedures.</p>
-    <div class="services-grid">
-      <div class="svc-card">
-        <div class="svc-tag" data-i18n="svc.hair.tag">Hair restoration</div>
-        <div class="svc-title" data-i18n="svc.hair.title">Hair Transplant &amp; Care</div>
-        <ul class="svc-items">
-          <li data-i18n="svc.hair.i1">Advanced hair transplants (FUE/FUT)</li>
-          <li data-i18n="svc.hair.i2">Medical treatments for hair thinning &amp; fall</li>
-          <li data-i18n="svc.hair.i3">PRP therapy for hair restoration</li>
-        </ul>
-        <a href="#book" class="svc-arrow" style="text-decoration:none;color:inherit;" data-i18n="svc.book">Book consultation →</a>
-      </div>
-      <div class="svc-card">
-        <div class="svc-tag" data-i18n="svc.laser.tag">Laser</div>
-        <div class="svc-title" data-i18n="svc.laser.title">Laser Treatments</div>
-        <ul class="svc-items">
-          <li data-i18n="svc.laser.i1">Painless laser hair reduction (Soprano)</li>
-          <li data-i18n="svc.laser.i2">Advanced pigmentation &amp; tattoo removal</li>
-          <li data-i18n="svc.laser.i3">Skin resurfacing &amp; toning</li>
-        </ul>
-        <a href="#book" class="svc-arrow" style="text-decoration:none;color:inherit;" data-i18n="svc.book">Book consultation →</a>
-      </div>
-      <div class="svc-card">
-        <div class="svc-tag" data-i18n="svc.inj.tag">Injectables</div>
-        <div class="svc-title" data-i18n="svc.inj.title">Anti-Aging &amp; Injectables</div>
-        <ul class="svc-items">
-          <li data-i18n="svc.inj.i1">Botox — wrinkle reduction &amp; contouring</li>
-          <li data-i18n="svc.inj.i2">Dermal fillers — volume restoration</li>
-          <li data-i18n="svc.inj.i3">Facial contouring &amp; lip enhancement</li>
-        </ul>
-        <a href="#book" class="svc-arrow" style="text-decoration:none;color:inherit;" data-i18n="svc.book">Book consultation →</a>
-      </div>
-      <div class="svc-card">
-        <div class="svc-tag" data-i18n="svc.skin.tag">Aesthetics</div>
-        <div class="svc-title" data-i18n="svc.skin.title">Skin Rejuvenation</div>
-        <ul class="svc-items">
-          <li data-i18n="svc.skin.i1">World-class HydraFacial</li>
-          <li data-i18n="svc.skin.i2">DermaFrac micro-channeling</li>
-          <li data-i18n="svc.skin.i3">Skin brightening &amp; anti-aging protocols</li>
-        </ul>
-        <a href="#book" class="svc-arrow" style="text-decoration:none;color:inherit;" data-i18n="svc.book">Book consultation →</a>
-      </div>
+    <div class="treatments-wrap">
+      <button type="button" class="treatments-nav treatments-nav--prev" data-scroll-prev aria-label="Scroll treatments left">‹</button>
+      <div class="treatments-scroll" id="treatments-scroll" tabindex="0" role="region" data-i18n-aria="svc.scrollRegion"></div>
+      <button type="button" class="treatments-nav treatments-nav--next" data-scroll-next aria-label="Scroll treatments right">›</button>
     </div>
+    <p class="treatments-hint" data-i18n="svc.scrollHint">Swipe or scroll to explore all concerns →</p>
   </div>
 </section>
 
@@ -451,6 +415,7 @@
 </footer>
 
 <script src="config.js"></script>
+<script src="services-config.js"></script>
 <script src="i18n.js"></script>
 <script src="app.js"></script>
 </body>
